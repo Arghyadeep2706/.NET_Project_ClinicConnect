@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "_PatientLayout";
+}
+
+@model IEnumerable<ClinicConnect.Models.Appointment>
+
+<h2>Appointment History</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Appointment Date</th>
+            <th>Doctor Name</th>
+            <th>Reason</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model)
+        {
+            <tr>
+                <td>@appointment.AppointmentDate?.ToString("d")</td>
+                <td>@appointment.Doctor?.DoctorName</td>
+                <td>@appointment.Reason</td>
+                <td>@(appointment.AppointmentStatus == false ? "Pending" : "Approved")</td>
+            </tr>
+        }
+    </tbody>
+</table>

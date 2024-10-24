@@ -1,0 +1,60 @@
+﻿@using ClinicConnect
+@using ClinicConnect.Controllers
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *,DNTCaptcha.Core
+ 
+ 
+@model ClinicConnect.Models.Admin
+ 
+<form method="post">
+<div class="form-group">
+<label asp-for="AdminEmail"></label>
+<input asp-for="AdminEmail" class="form-control" />
+<span asp-validation-for="AdminEmail" class="text-danger"></span>
+</div>
+ 
+    <div class="form-group">
+<label asp-for="UserPassword"></label>
+<input asp-for="UserPassword" class="form-control" />
+<span asp-validation-for="UserPassword" class="text-danger"></span>
+</div>
+ 
+    <div class="input-group mb-3">
+<dnt-captcha asp-captcha-generator-max="999999"
+                     asp-captcha-generator-min="111111"
+                     asp-captcha-generator-language="English"
+                     asp-captcha-generator-display-mode="ShowDigits"
+                     asp-use-relative-urls="true"
+                     asp-placeholder="Enter Captcha"
+                     asp-validation-error-message="Please enter the security code."
+                     asp-font-name="Tahoma"
+                     asp-font-size="20"
+                     asp-fore-color="#333333"
+                     asp-back-color="#ccc"
+                     asp-text-box-class="text-box form-control"
+                     asp-text-box-template="<span class='input-group-prepend'><span class='form-group-text'></span></span>{0}"
+                     asp-validation-message-class="text-danger"
+                     asp-refresh-button-class="fas fa-redo btn-sm"
+                     asp-use-noise="false" />
+</div>
+ 
+    <input type="submit" value="Login" class="btn btn-primary" />
+</form>
+ 
+<div class="btn btn-info">
+    @Html.ActionLink("New User? Click Here", "Register", "Registeration")
+</div>
+ 
+<div class="btn btn-warning">
+    @Html.ActionLink("Forgot Password?", "ForgotPassword")
+</div>
+ 
+@section Scripts {
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/js/jquery.unobtrusive-ajax.js"></script>
+}
+

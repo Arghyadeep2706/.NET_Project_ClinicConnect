@@ -1,0 +1,26 @@
+﻿
+
+@model ClinicConnect.Models.Medicine
+<form asp-action="EditMedicine" method="post">
+    <input type="hidden" asp-for="MedId" />
+    <div class="form-group">
+        <label for="MedAvailability">Availability</label>
+        <select class="form-control" id="MedAvailability" name="MedAvailability">
+            <option value="true" selected="@Model.MedAvailability">Available</option>
+            <option value="false" selected="@(!Model.MedAvailability)">Not Available</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="MedName">Medicine Name</label>
+        <input type="text" class="form-control" id="MedName" name="MedName" value="@Model.MedName" required />
+    </div>
+    <div class="form-group">
+        <label for="MedBrand">Brand</label>
+        <input type="text" class="form-control" id="MedBrand" name="MedBrand" value="@Model.MedBrand" required />
+    </div>
+    <div class="form-group">
+        <label for="MedPrice">Price</label>
+        <input type="number" step="0.01" class="form-control" id="MedPrice" name="MedPrice" value="@Model.MedPrice" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

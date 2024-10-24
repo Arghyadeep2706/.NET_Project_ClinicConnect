@@ -1,0 +1,38 @@
+﻿@model ClinicConnect.Models.Medicine
+
+@{
+    ViewData["Title"] = "Add Medicine";
+}
+
+<h2>Add Medicine</h2>
+
+<form asp-action="AddMedicine" method="post">
+    <div class="form-group">
+        <label for="MedAvailability">Availability</label>
+        <select class="form-control" id="MedAvailability" name="MedAvailability">
+            <option value="true">Available</option>
+          
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="MedName">Medicine Name</label>
+        <input type="text" class="form-control" id="MedName" name="MedName" required />
+    </div>
+    <div class="form-group">
+        <label for="MedBrand">Brand</label>
+        <input type="text" class="form-control" id="MedBrand" name="MedBrand" required />
+    </div>
+    <div class="form-group">
+        <label for="MedPrice">Price</label>
+        <input type="number" step="0.01" class="form-control" id="MedPrice" name="MedPrice" min="0" required />
+
+    </div>
+    <button type="submit" class="btn btn-primary">Add Medicine</button>
+</form>
+
+@if (ViewData["Message"] != null)
+{
+    <div class="alert alert-danger">
+        @ViewData["Message"]
+    </div>
+}

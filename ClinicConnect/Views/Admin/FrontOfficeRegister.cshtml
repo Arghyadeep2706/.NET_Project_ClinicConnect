@@ -1,0 +1,40 @@
+﻿@model ClinicConnect.Models.FrontOffice
+
+@{
+    ViewData["Title"] = "FrontOffice Registration";
+}
+<h2>FrontOffice Registration</h2>
+<div>
+    @if (ViewData["v"] != null)
+    {
+        <div class="alert alert-info">@ViewData["v"]</div>
+    }
+</div>
+<form asp-action="FrontOfficeRegister" method="post">
+    <div class="form-group">
+        @Html.LabelFor(m => m.FrontOfficeName)
+        @Html.EditorFor(m => m.FrontOfficeName, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.FrontOfficeName, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.FrontOfficeEmail)
+        @Html.EditorFor(m => m.FrontOfficeEmail, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.FrontOfficeEmail, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.FrontOfficePhoneNo)
+        @Html.EditorFor(m => m.FrontOfficePhoneNo, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.FrontOfficePhoneNo, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.FrontOfficeAddress)
+        @Html.EditorFor(m => m.FrontOfficeAddress, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.FrontOfficeAddress, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.UserPassword)
+        @Html.EditorFor(m => m.UserPassword, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+        @Html.ValidationMessageFor(m => m.UserPassword, "", new { @class = "text-danger" })
+    </div>
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>

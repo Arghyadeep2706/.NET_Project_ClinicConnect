@@ -1,0 +1,92 @@
+﻿@using ClinicConnect
+
+@using ClinicConnect.Controllers
+
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+@addTagHelper *,DNTCaptcha.Core
+
+@{
+    Layout = "_AdminLayout";
+}
+@model ClinicConnect.Models.Doctor
+
+@{
+    ViewData["Title"] = "Doctor Registration";
+}
+
+<h2>Doctor Registration</h2>
+
+<div>
+    @if (ViewData["v"] != null)
+    {
+        <div class="alert alert-info">@ViewData["v"]</div>
+    }
+</div>
+
+<form asp-action="DoctorRegister" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.DoctorName)
+        @Html.EditorFor(m => m.DoctorName, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.DoctorName, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.DoctorEmail)
+        @Html.EditorFor(m => m.DoctorEmail, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.DoctorEmail, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.DoctorPhoneNo)
+        @Html.EditorFor(m => m.DoctorPhoneNo, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.DoctorPhoneNo, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Specialization)
+        @Html.EditorFor(m => m.Specialization, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(m => m.Specialization, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.UserPassword)
+        @Html.EditorFor(m => m.UserPassword, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+        @Html.ValidationMessageFor(m => m.UserPassword, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="input-group mb-3">
+        <dnt-captcha asp-captcha-generator-max="999999"
+                     asp-captcha-generator-min="111111"
+                     asp-captcha-generator-language="English"
+                     asp-captcha-generator-display-mode="ShowDigits"
+                     asp-use-relative-urls="true"
+                     asp-placeholder="Enter Captcha"
+                     asp-validation-error-message="Please enter the security code."
+                     asp-font-name="Tahoma"
+                     asp-font-size="20"
+                     asp-fore-color="#333333"
+                     asp-back-color="#ccc"
+                     asp-text-box-class="text-box form-control"
+                     asp-text-box-template="<span class='input-group-prepend'>
+<span class='form-group-text'></span></span>{0}"
+                     asp-validation-message-class="text-danger"
+                     asp-refresh-button-class="fas fa-redo btn-sm" asp-use-noise="false" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+<div>
+    <a asp-action="Index">Back to list</a>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<script src="~/js/jquery.unobtrusive-ajax.js"></script>
+

@@ -1,0 +1,23 @@
+﻿@model dynamic
+
+@{
+    ViewData["Title"] = "Respond to Message";
+    Layout = "_DoctorLayout";
+}
+
+<h2>Respond to Message</h2>
+
+<div>
+    <h4>Message from @Model.PatientName (ID: @Model.PatientID)</h4>
+    <p><strong>Patient's Message:</strong> @Model.PatientsMessage</p>
+    <p><strong>Doctor's Response:</strong> @Model.DoctorsMessage</p> <!-- Ensure this references the correct property -->
+    <p><strong>Sent on:</strong> @Model.SentDate?.ToString("g")</p>
+    <form asp-action="RespondToMessage" method="post">
+        <input type="hidden" name="id" value="@Model.MessageID" />
+        <div class="form-group">
+            <label for="response">Your Response</label>
+            <textarea class="form-control" id="response" name="response" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+    </form>
+</div>

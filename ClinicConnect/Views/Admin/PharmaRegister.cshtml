@@ -1,0 +1,74 @@
+﻿@using ClinicConnect
+
+@using ClinicConnect.Controllers
+
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+
+@addTagHelper *,DNTCaptcha.Core
+
+@model ClinicConnect.Models.Pharmacist
+@{
+    ViewData["Title"] = "Pharmacist Registration";
+    Layout = "_AdminLayout";
+}
+
+<h2>Pharmacist Registration</h2>
+
+<div>
+    @if (ViewData["v"] != null)
+    {
+        <div class="alert alert-info">@ViewData["v"]</div>
+    }
+</div>
+
+<form asp-action="PharmaRegister" method="post">
+    <div class="form-group">
+        @Html.LabelFor(m => m.PharmName)
+        @Html.EditorFor(m => m.PharmName, new { htmlAttributes = new { @class = "form-control" } })
+       @*  @Html.ValidationMessageFor(m => m.PharmName, "", new { @class = "text-danger" }) *@
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.PharmEmail)
+        @Html.EditorFor(m => m.PharmEmail, new { htmlAttributes = new { @class = "form-control" } })
+      @*   @Html.ValidationMessageFor(m => m.PharmEmail, "", new { @class = "text-danger" }) *@
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.PharmPhoneNo)
+        @Html.EditorFor(m => m.PharmPhoneNo, new { htmlAttributes = new { @class = "form-control" } })
+      @*   @Html.ValidationMessageFor(m => m.PharmPhoneNo, "", new { @class = "text-danger" }) *@
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.PharmAddress)
+        @Html.EditorFor(m => m.PharmAddress, new { htmlAttributes = new { @class = "form-control" } })
+      @*   @Html.ValidationMessageFor(m => m.PharmAddress, "", new { @class = "text-danger" }) *@
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.UserPassword)
+        @Html.EditorFor(m => m.UserPassword, new { htmlAttributes = new { @class = "form-control", type = "password" } })
+@*         @Html.ValidationMessageFor(m => m.UserPassword, "", new { @class = "text-danger" }) *@
+    </div>
+    <div class="input-group mb-3">
+        <dnt-captcha asp-captcha-generator-max="999999"
+                     asp-captcha-generator-min="111111"
+                     asp-captcha-generator-language="English"
+                     asp-captcha-generator-display-mode="ShowDigits"
+                     asp-use-relative-urls="true"
+                     asp-placeholder="Enter Captcha"
+                     asp-validation-error-message="Please enter the security code."
+                     asp-font-name="Tahoma"
+                     asp-font-size="20"
+                     asp-fore-color="#333333"
+                     asp-back-color="#ccc"
+                     asp-text-box-class="text-box form-control"
+                     asp-text-box-template="<span class='input-group-prepend'>
+<span class='form-group-text'></span></span>{0}"
+    asp-validation-message-class="text-danger"
+    asp-refresh-button-class="fas fa-redo btn-sm" asp-use-noise="false" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>

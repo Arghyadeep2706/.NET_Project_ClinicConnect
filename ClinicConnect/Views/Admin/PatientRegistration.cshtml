@@ -1,0 +1,40 @@
+﻿@{
+    Layout = "_AdminLayout";
+}
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Patient Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.PatientName</td>
+                    <td>@item.PatientAge</td>
+                    <td>@item.PatientGender</td>
+                    <td>@item.PatientEmail</td>
+                    <td>@item.PatientPhoneNo</td>
+                    <td>@item.PatientAddress</td>
+                    <td>
+                        <a asp-action="EditPatient" asp-route-id="@item.PatientId" class="btn btn-warning">Edit</a>
+                        <a asp-action="DeletePatient" asp-route-id="@item.PatientId" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No patients found.</p>
+}

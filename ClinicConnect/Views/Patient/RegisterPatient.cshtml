@@ -1,0 +1,77 @@
+﻿@model ClinicConnect.Models.Patient
+@{
+    Layout = "_PatientLayout";
+}
+<form method="post">
+    <div>
+        <label asp-for="PatientEmail">Email</label>
+        <input type="email" asp-for="PatientEmail" required />
+    </div>
+
+    <div>
+        <label asp-for="UserPassword">Password</label>
+        <input type="password" asp-for="UserPassword" required />
+    </div>
+
+    <div>
+        <label asp-for="PatientName">Name</label>
+        <input type="text" asp-for="PatientName" required />
+    </div>
+
+    <div>
+        <label asp-for="PatientAge">Age</label>
+        <input type="number" asp-for="PatientAge" required />
+    </div>
+
+    <div>
+        <label asp-for="PatientGender">Gender</label>
+        <select asp-for="PatientGender" required>
+            <option value="" disabled selected>Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+    </div>
+
+    <div>
+        <label asp-for="Dob">Date of Birth</label>
+        <input type="date" asp-for="Dob" />
+    </div>
+
+    <div>
+        <label asp-for="PatientPhoneNo">Phone Number</label>
+        <input type="text" asp-for="PatientPhoneNo" />
+    </div>
+
+    <div>
+        <label asp-for="PatientAddress">Address</label>
+        <input type="text" asp-for="PatientAddress" required /> <!-- Make this required if needed -->
+    </div>
+
+    <div>
+        <label>Security Question</label>
+        <select asp-for="SecurityQuestion" required>
+            <option value="" disabled selected>Select a Security Question</option>
+            <option value="What is your pet's name?">What is your pet's name?</option>
+            <option value="What is your mother's maiden name?">What is your mother's maiden name?</option>
+            <option value="What city were you born in?">What city were you born in?</option>
+            <option value="What is your favorite color?">What is your favorite color?</option>
+            <!-- Add more security questions as needed -->
+        </select>
+    </div>
+
+    <div>
+        <label asp-for="SecurityAnswer">Answer</label>
+        <input type="text" asp-for="SecurityAnswer" required />
+    </div>
+
+    <input type="submit" value="Register" />
+</form>
+
+@if (ViewData["v"] != null)
+{
+    <div>@ViewData["v"]</div>
+}
+
+
+

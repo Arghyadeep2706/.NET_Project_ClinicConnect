@@ -1,0 +1,45 @@
+﻿@model ClinicConnect.Models.Pharmacist
+
+@{
+    ViewData["Title"] = "Edit Pharmacist";
+    Layout = "_AdminLayout";
+}
+
+<h2>Edit Pharmacist</h2>
+
+<form asp-action="EditPharmacist" method="post">
+    <input type="hidden" asp-for="PharmMemberId" />
+    <div class="form-group">
+        <label for="PharmName">Pharmacist Name</label>
+        <input type="text" class="form-control" asp-for="PharmName" />
+     @*    <span asp-validation-for="PharmName" class="text-danger"></span> *@
+    </div>
+    <div class="form-group">
+        <label for="PharmEmail">Email</label>
+        <input type="email" class="form-control" asp-for="PharmEmail" />
+       @*  <span asp-validation-for="PharmEmail" class="text-danger"></span> *@
+    </div>
+    <div class="form-group">
+        <label for="PharmPhoneNo">Phone Number</label>
+        <input type="text" class="form-control" asp-for="PharmPhoneNo" />
+       @*  <span asp-validation-for="PharmPhoneNo" class="text-danger"></span> *@
+    </div>
+    <div class="form-group">
+        <label for="PharmAddress">Address</label>
+        <input type="text" class="form-control" asp-for="PharmAddress" />
+        @* <span asp-validation-for="PharmAddress" class="text-danger"></span> *@
+    </div>
+    <div class="form-group">
+        <label for="UserPassword">Password</label>
+        <input type="password" class="form-control" asp-for="UserPassword" />
+       @*  <span asp-validation-for="UserPassword" class="text-danger"></span> *@
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
+
+@if (ViewData["Message"] != null)
+{
+    <div class="alert alert-danger">
+        @ViewData["Message"]
+    </div>
+}

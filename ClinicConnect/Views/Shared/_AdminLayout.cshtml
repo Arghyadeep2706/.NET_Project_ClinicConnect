@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ClinicConnect.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .welcome-message {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+
+            <li><a asp-controller="Admin" asp-action="Login">Login</a></li>
+           
+            <li><a asp-controller="Admin" asp-action="Patient">Patient</a></li>
+            <li><a asp-controller="Admin" asp-action="Doctor">Doctor</a></li>
+            <li><a asp-controller="Admin" asp-action="FrontOffice">FrontOffice</a></li>
+            <li><a asp-controller="Admin" asp-action="Pharmacist">Pharmacist</a></li>
+
+
+        </nav>
+
+    </header>
+
+    <div class="container">
+        @RenderBody() <!-- This is where the content of the views will be rendered -->
+    </div>
+
+    <footer>
+        <!-- Your footer content -->
+        © 2024 Clinic Connect. All rights reserved.
+    </footer>
+</body>
+</html>
+
+@{
+    ViewData["Title"] = "FrontOffice Home";
+}
+
+<div class="welcome-message">
+   
+    <h2>Welcome to the Clinic Connect</h2>
+</div>

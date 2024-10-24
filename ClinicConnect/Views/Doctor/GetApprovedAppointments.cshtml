@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ClinicConnect.Models.Appointment>
+
+@{
+    ViewData["Title"] = "Approved Appointments";
+    Layout = "_DoctorLayout";
+}
+
+<h2>Approved Appointments</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Patient ID</th>
+            <th>Patient Name</th> <!-- Display the Patient Name -->
+            <th>Appointment Date</th>
+            <th>Reason</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var appointment in Model)
+            {
+                <tr>
+                    <td>@appointment.PatientId</td>
+                    <td>@appointment.Patient.PatientName</td> <!-- Accessing the Patient's name -->
+                    <td>@appointment.AppointmentDate?.ToString("g")</td>
+                    <td>@appointment.Reason</td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="4" class="text-center">No approved appointments found.</td>
+            </tr>
+        }
+    </tbody>
+</table>

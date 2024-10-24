@@ -1,0 +1,78 @@
+﻿@model ClinicConnect.ViewModels.BillingViewModel
+
+<h2 class="text-center my-4">Create Billing</h2>
+
+<form asp-action="Create" method="post" class="container">
+    <div class="form-group">
+        <label for="PatientId">Patient ID:</label>
+        <input asp-for="PatientId" class="form-control" id="PatientId" required />
+        <span asp-validation-for="PatientId" class="text-danger"></span>
+    </div>
+
+    <h3 class="my-4">Medicines</h3>
+    <div id="medicinesContainer">
+        @for (int i = 0; i < Model.BillingMedicines.Count; i++)
+        {
+            <div class="medicineEntry border p-3 mb-3">
+                <div class="form-group">
+                    <label for="MedName_@i">Medicine Name:</label>
+                    <input type="text" name="BillingMedicines[@i].MedName" class="form-control" id="MedName_@i" required />
+                    <span asp-validation-for="BillingMedicines[@i].MedName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Quantity_@i">Quantity:</label>
+                    <input type="number" name="BillingMedicines[@i].Quantity" class="form-control" id="Quantity_@i" required />
+                    <span asp-validation-for="BillingMedicines[@i].Quantity" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Price_@i">Price:</label>
+                    <input type="number" step="0.01" name="BillingMedicines[@i].Price" class="form-control" id="Price_@i" required />
+                    <span asp-validation-for="BillingMedicines[@i].Price" class="text-danger"></span>
+                </div>
+            </div>
+        }
+    </div>
+
+    <button type="button" id="addMore" class="btn btn-secondary mb-3">Add Medicine</button>
+
+    <div class="form-group">
+        <label for="Tax">Tax:</label>
+        <input asp-for="Tax" class="form-control" id="Tax" step="0.01" />
+        <span asp-validation-for="Tax" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Discount">Discount:</label>
+        <input asp-for="Discount" class="form-control" id="Discount" step="0.01" />
+        <span asp-validation-for="Discount" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+@section Scripts {
+    <script>
+        let medicineCount = @Model.BillingMedicines.Count;
+
+        document.getElementById("addMore").addEventListener("click", function () {
+            const container = document.getElementById("medicinesContainer");
+            const newEntry = `
+                                <div class="medicineEntry border p-3 mb-3">
+                                    <div class="form-group">
+                                        <label for="MedName_${medicineCount}">Medicine Name:</label>
+                                        <input type="text" name="BillingMedicines[${medicineCount}].MedName" class="form-control" id="MedName_${medicineCount}" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Quantity_${medicineCount}">Quantity:</label>
+                                        <input type="number" name="BillingMedicines[${medicineCount}].Quantity" class="form-control" id="Quantity_${medicineCount}" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Price_${medicineCount}">Price:</label>
+                                        <input type="number" step="0.01" name="BillingMedicines[${medicineCount}].Price" class="form-control" id="Price_${medicineCount}" required />
+                                    </div>
+                                </div>`;
+            container.insertAdjacentHTML('beforeend', newEntry);
+            medicineCount++;
+        });
+    </script>
+}

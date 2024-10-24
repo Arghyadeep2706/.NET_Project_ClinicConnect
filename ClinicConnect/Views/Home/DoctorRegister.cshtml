@@ -1,0 +1,58 @@
+﻿@model ClinicConnect.Models.Doctor
+
+@{
+    ViewData["Title"] = "Doctor Registration";
+}
+
+<h2>Doctor Registration</h2>
+
+<div>
+    @if (ViewData["v"] != null)
+    {
+        <div class="alert alert-info">@ViewData["v"]</div>
+    }
+</div>
+
+<form asp-action="DoctorRegister" method="post">
+    <div class="form-group">
+        <label asp-for="DoctorName"></label>
+        <input asp-for="DoctorName" class="form-control" />
+        <span asp-validation-for="DoctorName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DoctorEmail"></label>
+        <input asp-for="DoctorEmail" class="form-control" />
+        <span asp-validation-for="DoctorEmail" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DoctorPhoneNo"></label>
+        <input asp-for="DoctorPhoneNo" class="form-control" />
+        <span asp-validation-for="DoctorPhoneNo" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Specialization"></label>
+        <input asp-for="Specialization" class="form-control" />
+        <span asp-validation-for="Specialization" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+</form>
+
+<div>
+    <a asp-action="Index">Back to list</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

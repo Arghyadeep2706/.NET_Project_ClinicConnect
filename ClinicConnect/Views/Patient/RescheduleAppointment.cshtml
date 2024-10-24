@@ -1,0 +1,68 @@
+﻿@{
+    Layout = "_PatientLayout";
+}
+
+@model IEnumerable<ClinicConnect.Models.Appointment>
+
+<h2>Reschedule Appointment</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Appointment Date</th>
+            <th>Doctor Name</th>
+            <th>Reason</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model)
+        {
+            <tr>
+                <td>@appointment.AppointmentDate?.ToString("d")</td>
+                <td>@appointment.Doctor?.DoctorName</td>
+                <td>@appointment.Reason</td>
+                <td>
+                    <form method="post" asp-action="RescheduleAppointment" class="reschedule-form">
+                        <input type="hidden" name="appointmentId" value="@appointment.AppointmentId" />
+                        <button type="button" class="btn btn-primary edit-button" onclick="toggleEdit(this)">Edit</button>
+                        <div class="edit-inputs" style="display:none;">
+                            <label for="newDate">New Date:</label>
+                            <input type="date" name="newAppointmentDate" required />
+                            <br />
+                            <label for="newReason">New Reason:</label>
+                            <input type="text" name="newReason" value="@appointment.Reason" required />
+                            <br />
+                            <button type="submit" class="btn btn-success">Save</button>
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<script>
+    function toggleEdit(button) {
+        const editInputs = button.nextElementSibling; // Get the next sibling div
+        if (editInputs.style.display === "none") {
+            editInputs.style.display = "block"; // Show the edit inputs
+        } else {
+            editInputs.style.display = "none"; // Hide the edit inputs
+        }
+    }
+</script>

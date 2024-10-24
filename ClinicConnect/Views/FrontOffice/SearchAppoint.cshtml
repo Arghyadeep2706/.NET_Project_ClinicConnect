@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Search Appointment";
+    Layout = "_FrontOfficeLayout";
+}
+
+<h2 class="text-center mb-4">Search Appointment</h2>
+
+<div class="container">
+    <form asp-action="SearchAppoint" method="post" class="form-inline justify-content-center">
+        <div class="form-group mb-2">
+            <label for="appointmentId" class="sr-only">Appointment ID:</label>
+            <input type="number" id="appointmentId" name="appointmentId" class="form-control" placeholder="Enter Appointment ID" required />
+        </div>
+        <button type="submit" class="btn btn-primary mb-2 ml-2">Search</button>
+    </form>
+
+    @if (ViewBag.Message != null)
+    {
+        <div class="alert alert-warning mt-3" role="alert">
+            @ViewBag.Message
+        </div>
+    }
+</div>

@@ -1,0 +1,48 @@
+﻿@model ClinicConnect.ViewModels.BillingViewModel
+
+<form asp-action="Create" method="post">
+    <div>
+        <label>Patient ID:</label>
+        <input asp-for="PatientId" required />
+        <span asp-validation-for="PatientId" class="text-danger"></span>
+    </div>
+
+    <h3>Medicines</h3>
+    <div id="medicinesContainer">
+        @for (int i = 0; i < Model.BillingMedicines.Count; i++)
+        {
+            <div class="medicineEntry">
+                <label>Medicine Brand:</label>
+                <input type="text" name="BillingMedicines[@i].MedBrand" required />
+                <span asp-validation-for="BillingMedicines[@i].MedBrand" class="text-danger"></span>
+
+                <label>Medicine Name:</label>
+                <input type="text" name="BillingMedicines[@i].MedName" required />
+                <span asp-validation-for="BillingMedicines[@i].MedName" class="text-danger"></span>
+
+                <label>Quantity:</label>
+                <input type="number" name="BillingMedicines[@i].Quantity" required />
+                <span asp-validation-for="BillingMedicines[@i].Quantity" class="text-danger"></span>
+
+                <label>Price:</label>
+                <input type="number" step="0.01" name="BillingMedicines[@i].Price" required />
+                <span asp-validation-for="BillingMedicines[@i].Price" class="text-danger"></span>
+            </div>
+        }
+    </div>
+
+    <div>
+        <label>Discount:</label>
+        <input type="number" step="0.01" asp-for="Discount" required />
+        <span asp-validation-for="Discount" class="text-danger"></span>
+    </div>
+
+    <div>
+        <label>Tax:</label>
+        <input type="number" step="0.01" asp-for="Tax" required />
+        <span asp-validation-for="Tax" class="text-danger"></span>
+    </div>
+
+    <button type="button" id="addMore">Add More</button>
+    <button type="submit">Submit</button>
+</form>

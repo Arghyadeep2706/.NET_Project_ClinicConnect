@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ClinicConnect.Models.Pharmacist>
+
+@{
+    ViewData["Title"] = "Pharmacist Registration";
+    Layout = "_AdminLayout";
+}
+
+<h2>Pharmacist Registration</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Pharmacist Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null)
+        {
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item?.PharmName</td>
+                    <td>@item?.PharmEmail</td>
+                    <td>@item?.PharmPhoneNo</td>
+                    <td>@item?.PharmAddress</td>
+                    <td>
+                        <a asp-action="EditPharmacist" asp-route-id="@item?.PharmMemberId" class="btn btn-warning">Edit</a>
+                        <a asp-action="DeletePharmacist" asp-route-id="@item?.PharmMemberId" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5">No pharmacists found.</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a asp-action="PharmaRegister" asp-controller="PatientRegister" class="btn btn-primary">Register</a>
+</div>

@@ -1,0 +1,79 @@
+﻿@* 
+<h1>I am home patient.</h1>
+
+
+@{
+    ViewData["Title"] = "Patient Home";
+}
+
+<h2>Welcome to the Clinic Connect</h2>
+
+<nav>
+    <ul>
+        <li><a asp-controller="Patient" asp-action="Login">Login</a></li>
+        <li><a asp-controller="Patient" asp-action="RegisterPatient">Register</a></li>
+        
+
+            <li><a asp-controller="Patient" asp-action="BookAppointment">Book Appointment</a></li>
+            <li><a asp-controller="Patient" asp-action="RescheduleAppointment">Reschedule Appointment</a></li>
+            <li><a asp-controller="Patient" asp-action="CancelAppointment">Cancel Appointment</a></li>
+            <li><a asp-controller="Patient" asp-action="ViewMessages">Send Message to Doctor</a></li>
+            <li><a asp-controller="Patient" asp-action="GetAppointmentHistory">Appointment History</a></li>
+            <li><a asp-controller="Patient" asp-action="SearchMedicines">Search Medicines</a></li>
+            <li><a asp-controller="Patient" asp-action="EditProfile">Edit</a></li>
+            <li><a asp-controller="Patient" asp-action="Logout">Logout</a></li>
+   
+    </ul>
+
+</nav>
+
+<style>
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 15px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: blue;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+</style>
+ *@
+
+
+
+
+
+
+@* <nav>
+    <ul>
+        <li><a asp-controller="Patient" asp-action="Login">Login</a></li>
+        <li><a asp-controller="Patient" asp-action="RegisterPatient">Register</a></li>
+
+
+        <li><a asp-controller="Patient" asp-action="BookAppointment">Book Appointment</a></li>
+        <li><a asp-controller="Patient" asp-action="RescheduleAppointment">Reschedule Appointment</a></li>
+        <li><a asp-controller="Patient" asp-action="CancelAppointment">Cancel Appointment</a></li>
+        <li><a asp-controller="Patient" asp-action="ViewMessages">Send Message to Doctor</a></li>
+        <li><a asp-controller="Patient" asp-action="GetAppointmentHistory">Appointment History</a></li>
+        <li><a asp-controller="Patient" asp-action="SearchMedicines">Search Medicines</a></li>
+        <li><a asp-controller="Patient" asp-action="EditProfile">Edit</a></li>
+        <li><a asp-controller="Patient" asp-action="Logout">Logout</a></li>
+
+    </ul>
+
+</nav> *@
+@* <h1>Welcome to Patient Home</h1> *@
+<!-- Patient-specific content -->
+@{
+    Layout = "_PatientLayout";
+}

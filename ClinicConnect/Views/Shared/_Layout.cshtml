@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ClinicConnect</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ClinicConnect.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            background-color: #f8f9fa; 
+        }
+
+        header {
+            background-color: #007bff; 
+            color: white;
+            padding: 10px 0;
+        }
+
+        footer {
+            background-color: #343a40; 
+            color: white;
+            padding: 10px 0;
+        }
+
+        .navbar {
+            border-bottom: 2px solid #007bff; 
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+
+        .container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+            .footer a:hover {
+                text-decoration: underline;
+            }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: #343a40;
+        }
+
+        .main-content {
+            background-color: #ffffff; 
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-center">
+        <h1>Welcome to ClinicConnect</h1>
+        <p>Your health, our priority.</p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="Home">
+            <img src="~/images/i" alt="Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+               
+                <li class="nav-item"><a class="nav-link" asp-controller="Home" asp-action="index">Home</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Patient" asp-action="HomePatient">Patient</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Doctor" asp-action="HomeDoctor">Doctor</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="FrontOffice" asp-action="HomeFrontOffice">FrontOffice</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Pharmacist" asp-action="HomePharmacist">Pharmacist</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Admin" asp-action="HomeAdmin">Admin</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <main role="main" class="pb-3 main-content">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container text-center">
+            © 2024 - ClinicConnect - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

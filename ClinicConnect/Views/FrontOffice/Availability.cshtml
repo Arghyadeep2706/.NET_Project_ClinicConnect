@@ -1,0 +1,47 @@
+﻿@{
+    Layout = "_FrontOfficeLayout";
+}
+@model IEnumerable<ClinicConnect.Models.Doctor>
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Doctor Availability</h2>
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Doctor Name</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var doctor in Model)
+
+            {
+
+                foreach (var availability in doctor.DoctorAvailabilities)
+
+                {
+                    <tr>
+                        <td>@doctor.DoctorName</td>
+                        <td>@(availability.Monday ?? false ? "Available" : "Not Available")</td>
+                        <td>@(availability.Tuesday ?? false ? "Available" : "Not Available")</td>
+                        <td>@(availability.Wednesday ?? false ? "Available" : "Not Available")</td>
+                        <td>@(availability.Thursday ?? false ? "Available" : "Not Available")</td>
+                        <td>@(availability.Friday ?? false ? "Available" : "Not Available")</td>
+                        <td>@(availability.Saturday ?? false ? "Available" : "Not Available")</td>
+                        <td>@(availability.Sunday ?? false ? "Available" : "Not Available")</td>
+                    </tr>
+
+                }
+
+            }
+        </tbody>
+    </table>
+</div>
+

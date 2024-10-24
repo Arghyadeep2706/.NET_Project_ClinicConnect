@@ -1,0 +1,23 @@
+﻿@using ClinicConnect.Controllers;
+@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *,DNTCaptcha.Core
+@model ClinicConnect.Models.Doctor
+
+@{
+    Layout = "_DoctorLayout";
+}
+<form method="post">
+    <input type="text" asp-for="DoctorEmail" placeholder="Email" required />
+    <input type="password" asp-for="UserPassword" placeholder="Password" required />
+
+    <input type="submit" value="Login" />
+
+</form>
+
+@if (ViewData["v"] != null)
+{
+    <div>@ViewData["v"]</div>
+}
+
+
+

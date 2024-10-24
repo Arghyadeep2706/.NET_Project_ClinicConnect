@@ -1,0 +1,116 @@
+﻿@* @model ClinicConnect.Models.Message
+
+<h2>Send Message to Doctor</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["Message"]
+    </div>
+}
+
+<form asp-action="SendMessageToDoctor" method="post">
+    <div class="form-group">
+        <label asp-for="DoctorId">Select Doctor:</label>
+        <select asp-for="DoctorId" asp-items="@(new SelectList(ViewBag.Doctors, "DoctorId", "DoctorName"))" required class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PatientMessage"></label>
+        <textarea asp-for="PatientMessage" class="form-control" required></textarea>
+        <span asp-validation-for="PatientMessage" class="text-danger"></span>
+    </div>
+
+    <input type="hidden" asp-for="PatientId" value="2" /> <!-- Replace with actual patient ID -->
+    <input type="hidden" asp-for="AppointmentId" />
+
+    <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+<style>
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+</style>
+ *@
+
+@{
+    Layout = "_PatientLayout";
+}
+
+
+
+@model ClinicConnect.Models.Message
+
+<h2>Send Message to Doctor</h2>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["Message"]
+    </div>
+}
+
+<form asp-action="SendMessageToDoctor" method="post">
+    <div class="form-group">
+        <label asp-for="DoctorId">Select Doctor:</label>
+        <select asp-for="DoctorId" asp-items="@(new SelectList(ViewBag.Doctors, "DoctorId", "DoctorName"))" required class="form-control"></select>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PatientMessage"></label>
+        <textarea asp-for="PatientMessage" class="form-control" required></textarea>
+        <span asp-validation-for="PatientMessage" class="text-danger"></span>
+    </div>
+
+    <input type="hidden" asp-for="PatientId" value="2" /> <!-- Replace with actual patient ID -->
+    <input type="hidden" asp-for="AppointmentId" />
+
+    <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+<style>
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+</style>

@@ -1,0 +1,34 @@
+﻿
+@model IEnumerable<ClinicConnect.Models.Appointment>
+
+@{
+    ViewData["Title"] = "Appointment list";
+    Layout = "_FrontOfficeLayout";
+}
+
+<h2>Appointment List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>AppointmentId</th>
+            <th>PatientId</th>
+            <th>AppointmentDate</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.AppointmentId</td>
+                <td>@item.PatientId</td>
+                <td>@item.AppointmentDate</td>
+                <td>
+                    <a asp-action="UpdateAppointmentDate" asp-route-id="@item.AppointmentId" class="btn btn-warning">Update Date</a>
+                    <a asp-action="DeleteMedicine" asp-route-id="@item.AppointmentId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

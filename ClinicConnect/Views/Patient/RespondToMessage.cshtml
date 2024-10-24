@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "_PatientLayout";
+}
+
+@model ClinicConnect.Models.Message
+
+<h2>Respond to Message from @Model.Doctor.DoctorName</h2>
+
+<div>
+    <h4>Doctor's Last Message:</h4>
+    <p>@Model.DoctorMessage</p>
+
+    <h4>Your Response:</h4>
+    <form asp-action="RespondToMessage" method="post">
+        <input type="hidden" name="id" value="@Model.MessageId" />
+        <div class="form-group">
+            <textarea name="response" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Response</button>
+    </form>
+</div>
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-warning">
+        @TempData["Message"]
+    </div>
+}
+
+

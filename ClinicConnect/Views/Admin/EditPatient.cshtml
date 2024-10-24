@@ -1,0 +1,60 @@
+﻿@model ClinicConnect.Models.Patient
+
+@{
+    ViewData["Title"] = "Edit Patient";
+    Layout = "_AdminLayout";
+}
+
+<h2>Edit Patient</h2>
+
+<form asp-action="EditPatient" method="post">
+    <input type="hidden" asp-for="PatientId" />
+    <div class="form-group">
+        <label for="PatientName">Patient Name</label>
+        <input type="text" class="form-control" asp-for="PatientName" />
+     @*    <span asp-validation-for="PatientName" class="text-danger"></span> *@
+    </div>
+    <div class="form-group">
+        <label for="PatientAge">Age</label>
+        <input type="number" class="form-control" asp-for="PatientAge" />
+      @*   <span asp-validation-for="PatientAge" class="text-danger"></span> *@
+    </div>
+    <div class="form-group">
+        <label for="PatientGender">Gender</label>
+        <input type="text" class="form-control" asp-for="PatientGender" />
+      @*   <span asp-validation-for="PatientGender" class="text-danger"></span> *@
+    </div>
+    <div class="form-group">
+        <label for="Dob">Date of Birth</label>
+        <input type="date" class="form-control" asp-for="Dob" />
+      @*   <span asp-validation-for="Dob" class="text-danger"></span> *@
+    </div>
+    <div class="form-group">
+        <label for="PatientEmail">Email</label>
+        <input type="email" class="form-control" asp-for="PatientEmail" />
+       @*  <span asp-validation-for="PatientEmail" class="text-danger"></span> *@
+    </div>
+    <div class="form-group">
+        <label for="PatientPhoneNo">Phone Number</label>
+        <input type="text" class="form-control" asp-for="PatientPhoneNo" />
+      @*   <span asp-validation-for="PatientPhoneNo" class="text-danger"></span> *@
+    </div>
+    <div class="form-group">
+        <label for="PatientAddress">Address</label>
+        <input type="text" class="form-control" asp-for="PatientAddress" />
+       @*  <span asp-validation-for="PatientAddress" class="text-danger"></span> *@
+    </div>
+    <div class="form-group">
+        <label for="UserPassword">Password</label>
+        <input type="password" class="form-control" asp-for="UserPassword" />
+      @*   <span asp-validation-for="UserPassword" class="text-danger"></span> *@
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
+
+@if (ViewData["Message"] != null)
+{
+    <div class="alert alert-success">
+        @ViewData["Message"]
+    </div>
+}

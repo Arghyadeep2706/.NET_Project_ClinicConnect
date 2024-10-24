@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "_PatientLayout";
+}
+
+@model IEnumerable<ClinicConnect.Models.Appointment>
+
+<h2>Cancel Appointment</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Appointment Date</th>
+            <th>Doctor Name</th>
+            <th>Reason</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model)
+        {
+            <tr>
+                <td>@appointment.AppointmentDate?.ToString("d")</td>
+                <td>@appointment.Doctor?.DoctorName</td>
+                <td>@appointment.Reason</td>
+                <td>
+                    <form method="post" asp-action="SubmitCancelAppointment" class="cancel-form">
+                        <input type="hidden" name="appointmentId" value="@appointment.AppointmentId" />
+                        <button type="submit" class="btn btn-danger">Cancel</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

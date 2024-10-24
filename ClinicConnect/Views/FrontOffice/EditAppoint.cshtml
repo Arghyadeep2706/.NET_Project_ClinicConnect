@@ -1,0 +1,39 @@
+﻿@model ClinicConnect.Models.Appointment
+
+@{
+    ViewData["Title"] = "Edit Appointment";
+    Layout = "_FrontOfficeLayout";
+}
+
+<h2>Edit Appointment</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+
+<form asp-action="EditAppoint" method="post">
+    <input type="hidden" asp-for="AppointmentId" />
+
+    <div>
+        <label for="newAppointmentDate">New Appointment Date:</label>
+        <input type="datetime-local" id="newAppointmentDate" name="newAppointmentDate" value="@Model.AppointmentDate" required />
+        <span asp-validation-for="AppointmentDate" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Save</button>
+    <a asp-action="Details" asp-route-id="@Model.AppointmentId" class="btn btn-secondary">Cancel</a>
+</form>
+
+<div>
+    <span asp-validation-summary="ModelOnly" class="text-danger"></span>
+</div>

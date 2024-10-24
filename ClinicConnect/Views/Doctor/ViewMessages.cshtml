@@ -1,0 +1,43 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "Messages";
+    Layout = "_DoctorLayout";
+}
+
+<h2>Messages</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Patient ID</th>
+            <th>Patient Name</th>
+            <th>Message</th>
+            <th>Sent Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (var message in Model)
+            {
+                <tr>
+                    <td>@message.PatientID</td>
+                    <td>@message.PatientName</td>
+                    <td>@message.PatientsMessage</td>
+                    <td>@message.SentDate?.ToString("g")</td>
+                    <td>
+                        <a asp-action="RespondToMessage" asp-route-id="@message.MessageID" class="btn btn-primary">Respond</a>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5" class="text-center">No messages found.</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,43 @@
+﻿@model IEnumerable<dynamic>
+
+@{
+    ViewData["Title"] = "Search Medicine";
+}
+
+<h2>Search Medicine</h2>
+
+<form asp-action="SearchMedicine" method="post">
+    <div class="form-group">
+        <label for="medName">Medicine Name</label>
+        <input type="text" class="form-control" id="medName" name="medName" />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+
+@if (Model != null && Model.Any())
+{
+    <h3>Search Results</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Medicine Name</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td>@item.MedName</td>
+                    <td>@(item.MedAvailability ? "Available" : "Not Available")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No medicines found.</p>
+}
+

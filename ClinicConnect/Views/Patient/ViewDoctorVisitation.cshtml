@@ -1,0 +1,69 @@
+﻿@{
+    Layout = "_PatientLayout";
+}
+
+@model IEnumerable<ClinicConnect.Models.Doctor>
+
+<h2>Doctor Visitation</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Specialization</th>
+            <th>Availability</th>
+            <th>Timing</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var doctor in Model)
+        {
+            <tr>
+                <td>@doctor.DoctorName</td>
+                <td>@doctor.DoctorEmail</td>
+                <td>@doctor.Specialization</td>
+                <td>
+                    @if (doctor.DoctorAvailabilities != null && doctor.DoctorAvailabilities.Any())
+                    {
+                        var availabilityDays = new List<string>();
+                        foreach (var availability in doctor.DoctorAvailabilities)
+                        {
+                            if (availability.Monday == true) availabilityDays.Add("Monday");
+                            if (availability.Tuesday == true) availabilityDays.Add("Tuesday");
+                            if (availability.Wednesday == true) availabilityDays.Add("Wednesday");
+                            if (availability.Thursday == true) availabilityDays.Add("Thursday");
+                            if (availability.Friday == true) availabilityDays.Add("Friday");
+                            if (availability.Saturday == true) availabilityDays.Add("Saturday");
+                            if (availability.Sunday == true) availabilityDays.Add("Sunday");
+                        }
+                        <text>@string.Join(", ", availabilityDays)</text>
+                    }
+                    else
+                    {
+                        <text>No Availability</text>
+                    }
+                </td>
+                <td>
+                    @if (doctor.DoctorAvailabilities != null && doctor.DoctorAvailabilities.Any())
+                    {
+                        var timingList = new List<string>();
+                        foreach (var availability in doctor.DoctorAvailabilities)
+                        {
+                            if (availability.StartTime.HasValue && availability.EndTime.HasValue)
+                            {
+                                var timing = $"{availability.StartTime.Value:hh\\:mm} - {availability.EndTime.Value:hh\\:mm}";
+                                timingList.Add(timing);
+                            }
+                        }
+                        <text>@Html.Raw(string.Join("<br />", timingList))</text>
+                    }
+                    else
+                    {
+                        <text>No Timing Available</text>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

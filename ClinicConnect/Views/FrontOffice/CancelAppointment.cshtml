@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "_FrontOfficeLayout"; 
+}
+@model IEnumerable<ClinicConnect.Models.Appointment>
+
+<div class="container">
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Message"]
+        </div>
+    }
+
+    <h1 class="text-center mb-4">Cancel Appointments</h1>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Patient ID</th>
+                <th>Patient Name</th>
+                <th>Appointment ID</th>
+                <th>Appointment Date</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var appointment in Model)
+            {
+                <tr>
+                    <td>@appointment.Patient.PatientId</td>
+                    <td>@appointment.Patient.PatientName</td>
+                    <td>@appointment.AppointmentId</td>
+                    <td>@appointment.AppointmentDate?.ToString("g")</td>
+                    <td>
+                        @if (appointment.AppointmentDate > DateTime.Now)
+                        {
+                            <form asp-action="CancelAppointment" method="post">
+                                <input type="hidden" name="id" value="@appointment.AppointmentId" />
+                                <button type="submit" class="btn btn-danger">Cancel</button>
+                            </form>
+                        }
+                        else
+                        {
+                            <button class="btn btn-secondary" disabled>Cannot Cancel</button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

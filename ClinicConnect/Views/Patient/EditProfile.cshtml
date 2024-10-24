@@ -1,0 +1,76 @@
+﻿@{
+    Layout = "_PatientLayout";
+}
+
+
+@model ClinicConnect.Models.Patient
+
+<h1>Edit Profile</h1>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-info">
+        @TempData["Message"]
+    </div>
+}
+
+<form asp-action="EditProfile" method="post">
+    <div class="form-group">
+        <label asp-for="PatientName"></label>
+        <input asp-for="PatientName" class="form-control" required />
+
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PatientAge"></label>
+        <input asp-for="PatientAge" type="number" class="form-control" required />
+     
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PatientGender"></label>
+        <select asp-for="PatientGender" class="form-control">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select>
+      
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Dob"></label>
+        <input asp-for="Dob" type="date" class="form-control" required />
+     
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password" class="form-control" required />
+       
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PatientEmail"></label>
+        <input asp-for="PatientEmail" type="email" class="form-control" required />
+       
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PatientPhoneNo"></label>
+        <input asp-for="PatientPhoneNo" class="form-control" required />
+        
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PatientAddress"></label>
+        <textarea asp-for="PatientAddress" class="form-control" required></textarea>
+    
+    </div>
+
+    
+
+    <input type="hidden" asp-for="PatientId" /> <!-- Hidden field for PatientId -->
+
+    <button type="submit" class="btn btn-primary">Update Profile</button>
+</form>

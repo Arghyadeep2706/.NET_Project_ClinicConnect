@@ -1,0 +1,37 @@
+﻿@model IEnumerable<ClinicConnect.Models.Medicine>
+
+@{
+    ViewData["Title"] = "Medicines List";
+}
+
+<h2>Medicines List</h2>
+
+<a asp-action="AddMedicine" class="btn btn-primary mb-3">Add Medicine</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Medicine Name</th>
+            <th>Brand</th>
+            <th>Availability</th>
+            <th>Price</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MedName</td>
+                <td>@item.MedBrand</td>
+                <td>@(item.MedAvailability ? "Available" : "Not Available")</td>
+                <td>@item.MedPrice</td>
+                <td>
+                    <a asp-action="EditMedicine" asp-route-id="@item.MedId" class="btn btn-warning">Edit</a>
+                    <a asp-action="DeleteMedicine" asp-route-id="@item.MedId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

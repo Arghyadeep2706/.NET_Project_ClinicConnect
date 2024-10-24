@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ClinicConnect.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .welcome-message {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Your header content (e.g., navigation) -->
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <ul>
+                <li><a asp-controller="Patient" asp-action="Login">Login</a></li>
+                <li><a asp-controller="Patient" asp-action="RegisterPatient">Register</a></li>
+                <li><a asp-controller="Patient" asp-action="BookAppointment">Book Appointment</a></li>
+                <li><a asp-controller="Patient" asp-action="RescheduleAppointment">Reschedule Appointment</a></li>
+                <li><a asp-controller="Patient" asp-action="CancelAppointment">Cancel Appointment</a></li>
+                <li><a asp-controller="Patient" asp-action="ViewMessages">Send Message to Doctor</a></li>
+                <li><a asp-controller="Patient" asp-action="GetAppointmentHistory">Appointment History</a></li>
+                <li><a asp-controller="Patient" asp-action="SearchMed">Search Medicines</a></li>
+                <li><a asp-controller="Patient" asp-action="EditProfile">Edit</a></li>
+                <li><a asp-controller="Patient" asp-action="Logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        @RenderBody() <!-- This is where the content of the views will be rendered -->
+    </div>
+
+    <footer>
+        <!-- Your footer content -->
+        © 2024 Clinic Connect. All rights reserved.
+    </footer>
+</body>
+</html>
+
+@{
+    ViewData["Title"] = "Patient Home";
+}
+
+<div class="welcome-message">
+    
+    <h2>Welcome to the Clinic Connect</h2>
+</div>

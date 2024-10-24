@@ -1,0 +1,38 @@
+﻿@model IEnumerable<ClinicConnect.Models.Doctor>
+
+@{
+    ViewData["Title"] = "Doctor Registration";
+   Layout = "_AdminLayout";
+}
+
+<h2>Doctor Registration</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Doctor Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Specialization</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.DoctorName</td>
+                <td>@item.DoctorEmail</td>
+                <td>@item.DoctorPhoneNo</td>
+                <td>@item.Specialization</td>
+                <td>
+                    <a asp-action="EditDoctor" asp-route-id="@item.DoctorId" class="btn btn-warning">Edit</a>
+                    <a asp-action="DeleteDoctor" asp-route-id="@item.DoctorId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a asp-action="DoctorRegister" asp-controller="PatientRegister" class="btn btn-primary">Register</a>
+</div>

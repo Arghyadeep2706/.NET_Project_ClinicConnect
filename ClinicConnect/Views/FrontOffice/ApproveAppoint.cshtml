@@ -1,0 +1,34 @@
+﻿@{
+    Layout = "_PatientLayout";
+}
+
+@model IEnumerable<ClinicConnect.Models.Appointment>
+<table>
+    <thead>
+        <tr>
+            <th>Patient Name</th>
+            <th>Appointment Date</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var appointment in Model)
+        {
+            <tr>
+                <td>@appointment.Patient.PatientName</td>
+                <td>@appointment.AppointmentDate</td>
+                <td>@(appointment.AppointmentStatus==true? "Approved" : "Pending")</td>
+                <td>
+                    @if (!appointment.AppointmentStatus==true)
+                    {
+                        <form asp-action="ApproveAppointment" method="post">
+                            <input type="hidden" name="appointmentId" value="@appointment.AppointmentId" />
+                            <button type="submit">Approve</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

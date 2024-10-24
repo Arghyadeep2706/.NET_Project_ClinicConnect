@@ -1,0 +1,72 @@
+﻿@{
+    Layout = "_PatientLayout";
+}
+
+@model ClinicConnect.Models.Appointment
+
+<h2>Book Appointment</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
+
+
+
+
+<form asp-action="BookAppointment" method="post" class="appointment-form">
+    <div class="form-group">
+        <label for="DoctorId">Select Doctor:</label>
+        <select asp-for="DoctorId" asp-items="@(new SelectList(ViewBag.Doctors, "DoctorId", "DoctorName"))" required class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label for="AppointmentDate">Appointment Date:</label>
+        <input asp-for="AppointmentDate" type="date" required class="form-control" min="@DateTime.Now.ToString("yyyy-MM-dd")" />
+    </div>
+    <div class="form-group">
+        <label for="Reason">Reason:</label>
+        <textarea asp-for="Reason" required class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="DoctorFee">Doctor Fee:</label>
+        <input asp-for="DoctorFee" type="number" required class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Book Appointment</button>
+</form>
+
+<style>
+    .appointment-form {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+</style>

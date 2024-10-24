@@ -1,0 +1,47 @@
+﻿@{
+    ViewBag.Title = "Appointments";
+    Layout = "_FrontOfficeLayout";
+}
+
+@model IEnumerable<ClinicConnect.Models.Appointment>
+
+<h1 class="text-center mb-4">Appointments</h1>
+
+<div class="container">
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>Appointment ID</th>
+                <th>Patient ID</th>
+                <th>Doctor ID</th>
+                <th>Appointment Date</th>
+                <th>Appointment Status</th>
+                <th>Reason</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var appointment in Model)
+            {
+                <tr>
+                    <td>@appointment.AppointmentId</td>
+                    <td>@appointment.PatientId</td>
+                    <td>@appointment.DoctorId</td>
+                    <td>@appointment.AppointmentDate?.ToString("g")</td>
+                    <td>@(appointment.AppointmentStatus == true ? "Approved" : appointment.AppointmentStatus == false ? "Disapproved" : "Pending")</td>
+                    <td>@appointment.Reason</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <form asp-action="ApproveAppoint" method="post" class="d-inline">
+                                <input type="hidden" name="id" value="@appointment.AppointmentId" />
+                                <button type="submit" class="btn btn-success btn-sm" @(appointment.AppointmentStatus == true ? "disabled" : "")>
+                                    Approve
+                                </button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

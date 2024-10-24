@@ -1,0 +1,840 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\doctorregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\doctorregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\doctorregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\doctorregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\deletedoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\deletedoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\patient\\bookappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\patient\\bookappointment.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\pharmaregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\pharmaregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\pharmacistregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\pharmacistregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\pharmacist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\pharmacist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\patientregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\patientregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\patientregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\patientregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\patient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\patient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\homeadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\homeadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\frontofficeregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\frontofficeregister.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\frontoffice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\frontoffice.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\editpharmacist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\editpharmacist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\editpatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\editpatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\editdoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\editdoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\doctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\doctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\deletepharmacist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\deletepharmacist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\admin\\deletepatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\admin\\deletepatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\controllers\\pharmacistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:controllers\\pharmacistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\controllers\\frontofficecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:controllers\\frontofficecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\shared\\_pharmacistlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\shared\\_pharmacistlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\shared\\_patientlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\shared\\_patientlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\shared\\_frontofficelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\shared\\_frontofficelayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\shared\\_doctorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\shared\\_doctorlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\doctor\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\doctor\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\doctor\\homedoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\doctor\\homedoctor.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\patient\\searchmed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\patient\\searchmed.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\models\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:models\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\doctor\\searchmedicine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\doctor\\searchmedicine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:models\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\models\\billingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:models\\billingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\pharmacist\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\pharmacist\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\pharmacist\\showallmedicine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\pharmacist\\showallmedicine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\pharmacist\\addmedicine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\pharmacist\\addmedicine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\pharmacist\\editmedicine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\pharmacist\\editmedicine.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|c:\\users\\alok.kumar8\\desktop\\rll_project\\clinicconnect\\views\\pharmacist\\homepharmacist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74200C6F-DB36-4897-8D63-C38CCE305418}|ClinicConnect.csproj|solutionrelative:views\\pharmacist\\homepharmacist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookAppointment.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Patient\\BookAppointment.cshtml",
+              "RelativeDocumentMoniker": "Views\\Patient\\BookAppointment.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Patient\\BookAppointment.cshtml",
+              "RelativeToolTip": "Views\\Patient\\BookAppointment.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T23:12:38.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\ResetPassword.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ResetPassword.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T22:36:53.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DeleteDoctor.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\DeleteDoctor.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\DeleteDoctor.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\DeleteDoctor.cshtml",
+              "RelativeToolTip": "Views\\Admin\\DeleteDoctor.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T20:46:10.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Models\\Admin.cs*",
+              "RelativeToolTip": "Models\\Admin.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T23:11:16.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DoctorRegister.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\DoctorRegister.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\DoctorRegister.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\DoctorRegister.cshtml",
+              "RelativeToolTip": "Views\\Admin\\DoctorRegister.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAAoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T20:36:47.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DoctorRegistration.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\DoctorRegistration.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\DoctorRegistration.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\DoctorRegistration.cshtml",
+              "RelativeToolTip": "Views\\Admin\\DoctorRegistration.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T20:41:57.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Login.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\Login.cshtml*",
+              "RelativeToolTip": "Views\\Admin\\Login.cshtml*",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T18:55:49.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\AdminController.cs*",
+              "RelativeToolTip": "Controllers\\AdminController.cs*",
+              "ViewState": "AQIAAJwCAAAAAAAAAAAAAOUBAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T18:28:18.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Pharmacist.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\Pharmacist.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Pharmacist.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\Pharmacist.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Pharmacist.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T21:12:45.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PatientRegistration.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\PatientRegistration.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PatientRegistration.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\PatientRegistration.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PatientRegistration.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T23:12:28.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PatientRegister.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\PatientRegister.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PatientRegister.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\PatientRegister.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PatientRegister.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T23:12:25.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FrontOfficeRegister.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\FrontOfficeRegister.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\FrontOfficeRegister.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\FrontOfficeRegister.cshtml",
+              "RelativeToolTip": "Views\\Admin\\FrontOfficeRegister.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAACgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T21:19:40.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FrontOffice.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\FrontOffice.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\FrontOffice.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\FrontOffice.cshtml",
+              "RelativeToolTip": "Views\\Admin\\FrontOffice.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T23:12:07.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PharmacistRegistration.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\PharmacistRegistration.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PharmacistRegistration.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\PharmacistRegistration.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PharmacistRegistration.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T21:01:37.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PharmaRegister.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\PharmaRegister.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PharmaRegister.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\PharmaRegister.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PharmaRegister.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T20:59:29.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ForgotPassword.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T23:12:04.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EditPatient.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\EditPatient.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\EditPatient.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\EditPatient.cshtml",
+              "RelativeToolTip": "Views\\Admin\\EditPatient.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T23:11:54.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HomeAdmin.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\HomeAdmin.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\HomeAdmin.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\HomeAdmin.cshtml",
+              "RelativeToolTip": "Views\\Admin\\HomeAdmin.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T18:28:22.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Patient.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\Patient.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Patient.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\Patient.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Patient.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T20:50:20.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Doctor.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\Doctor.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Doctor.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\Doctor.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Doctor.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T20:50:09.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DeletePharmacist.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\DeletePharmacist.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\DeletePharmacist.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\DeletePharmacist.cshtml",
+              "RelativeToolTip": "Views\\Admin\\DeletePharmacist.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T21:03:43.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DeletePatient.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\DeletePatient.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\DeletePatient.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\DeletePatient.cshtml",
+              "RelativeToolTip": "Views\\Admin\\DeletePatient.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T23:11:23.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "EditPharmacist.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\EditPharmacist.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\EditPharmacist.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\EditPharmacist.cshtml",
+              "RelativeToolTip": "Views\\Admin\\EditPharmacist.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T21:02:37.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PharmacistController.cs",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\PharmacistController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PharmacistController.cs",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\PharmacistController.cs*",
+              "RelativeToolTip": "Controllers\\PharmacistController.cs*",
+              "ViewState": "AQIAAOQAAAAAAAAAAAAkwC0AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T21:31:55.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EditDoctor.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\EditDoctor.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\EditDoctor.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Admin\\EditDoctor.cshtml",
+              "RelativeToolTip": "Views\\Admin\\EditDoctor.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T20:44:23.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\PatientController.cs*",
+              "RelativeToolTip": "Controllers\\PatientController.cs*",
+              "ViewState": "AQIAAM8BAAAAAAAAAAAuwKEBAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T22:25:47.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T21:32:04.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "FrontOfficeController.cs",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\FrontOfficeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FrontOfficeController.cs",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\FrontOfficeController.cs",
+              "RelativeToolTip": "Controllers\\FrontOfficeController.cs",
+              "ViewState": "AQIAAFoBAAAAAAAAAAAuwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T23:10:11.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Controllers\\DoctorController.cs*",
+              "RelativeToolTip": "Controllers\\DoctorController.cs*",
+              "ViewState": "AQIAAKgAAAAAAAAAAAA3wCsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T22:29:50.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T23:07:36.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "_PatientLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_PatientLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_PatientLayout.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_PatientLayout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_PatientLayout.cshtml*",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAF8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T22:37:44.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAEoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T22:23:45.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "_FrontOfficeLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_FrontOfficeLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_FrontOfficeLayout.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_FrontOfficeLayout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_FrontOfficeLayout.cshtml*",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGEAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T21:38:26.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "_DoctorLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_DoctorLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_DoctorLayout.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_DoctorLayout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_DoctorLayout.cshtml*",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAF8AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:04:44.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_AdminLayout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_AdminLayout.cshtml*",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAAAF4AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T20:00:52.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Medicine.cs",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Models\\Medicine.cs",
+              "RelativeDocumentMoniker": "Models\\Medicine.cs",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Models\\Medicine.cs",
+              "RelativeToolTip": "Models\\Medicine.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T22:00:36.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "BillingViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Models\\BillingViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\BillingViewModel.cs",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Models\\BillingViewModel.cs",
+              "RelativeToolTip": "Models\\BillingViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T22:07:43.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_PharmacistLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_PharmacistLayout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_PharmacistLayout.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Shared\\_PharmacistLayout.cshtml*",
+              "RelativeToolTip": "Views\\Shared\\_PharmacistLayout.cshtml*",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAQwFoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T19:04:29.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Models\\Patient.cs",
+              "RelativeDocumentMoniker": "Models\\Patient.cs",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Models\\Patient.cs",
+              "RelativeToolTip": "Models\\Patient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T22:25:40.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Doctor\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Doctor\\Login.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Doctor\\Login.cshtml",
+              "RelativeToolTip": "Views\\Doctor\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T22:55:24.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "HomeDoctor.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Doctor\\HomeDoctor.cshtml",
+              "RelativeDocumentMoniker": "Views\\Doctor\\HomeDoctor.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Doctor\\HomeDoctor.cshtml",
+              "RelativeToolTip": "Views\\Doctor\\HomeDoctor.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T22:56:31.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "SearchMedicine.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Doctor\\SearchMedicine.cshtml",
+              "RelativeDocumentMoniker": "Views\\Doctor\\SearchMedicine.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Doctor\\SearchMedicine.cshtml",
+              "RelativeToolTip": "Views\\Doctor\\SearchMedicine.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T22:33:39.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SearchMed.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Patient\\SearchMed.cshtml",
+              "RelativeDocumentMoniker": "Views\\Patient\\SearchMed.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Patient\\SearchMed.cshtml",
+              "RelativeToolTip": "Views\\Patient\\SearchMed.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T22:45:31.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Pharmacist\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pharmacist\\Create.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Pharmacist\\Create.cshtml",
+              "RelativeToolTip": "Views\\Pharmacist\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T21:53:13.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ShowAllMedicine.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Pharmacist\\ShowAllMedicine.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pharmacist\\ShowAllMedicine.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Pharmacist\\ShowAllMedicine.cshtml",
+              "RelativeToolTip": "Views\\Pharmacist\\ShowAllMedicine.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T21:34:15.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "AddMedicine.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Pharmacist\\AddMedicine.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pharmacist\\AddMedicine.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Pharmacist\\AddMedicine.cshtml",
+              "RelativeToolTip": "Views\\Pharmacist\\AddMedicine.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAwA0AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T21:46:24.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "EditMedicine.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Pharmacist\\EditMedicine.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pharmacist\\EditMedicine.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Pharmacist\\EditMedicine.cshtml",
+              "RelativeToolTip": "Views\\Pharmacist\\EditMedicine.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T21:37:10.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "HomePharmacist.cshtml",
+              "DocumentMoniker": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Pharmacist\\HomePharmacist.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pharmacist\\HomePharmacist.cshtml",
+              "ToolTip": "C:\\Users\\alok.kumar8\\Desktop\\RLL_Project\\ClinicConnect\\Views\\Pharmacist\\HomePharmacist.cshtml",
+              "RelativeToolTip": "Views\\Pharmacist\\HomePharmacist.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-18T21:30:32.546Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

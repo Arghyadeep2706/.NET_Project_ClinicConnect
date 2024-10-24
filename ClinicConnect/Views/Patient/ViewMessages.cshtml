@@ -1,0 +1,32 @@
+﻿@{
+    Layout = "_PatientLayout";
+}
+@model IEnumerable<dynamic>
+
+<h2>Your Messages</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Doctor Name</th>
+            <th>Your Previous Message</th>
+            <th>Doctor's Previous Message</th>
+            <th>Sent Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var message in Model)
+        {
+            <tr>
+                <td>@message.DoctorName</td>
+                <td>@message.PatientMessage</td>
+                <td>@message.DoctorMessage</td>
+                <td>@message.SentDate.ToString("g")</td>
+                <td>
+                    <a asp-action="RespondToMessage" asp-route-id="@message.MessageId"  class="btn btn-primary">Respond</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
